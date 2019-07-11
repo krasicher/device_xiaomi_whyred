@@ -95,6 +95,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
+    debug.gralloc.enable_fb_ubwc=1 \
+    debug.sf.disable_backpressure=1 \
+    debug.sf.enable_hwc_vds=1 \
+    debug.sf.hw=1 \
+    debug.sf.latch_unsignaled=1 \
+    dev.pm.dyn_samplingrate=1 \
+    persist.demo.hdmirotationlock=false \
+    sdm.debug.disable_skip_validate=1 \
+    vendor.display.disable_skip_validate=1 \
+    vendor.display.enable_default_color_mode=0 \
+    vendor.gralloc.enable_fb_ubwc=1 \
     vendor.video.disable.ubwc=1
 
 # OpenGL version
@@ -154,3 +165,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sys.fw.dex2oat_thread_count=8 \
     dalvik.vm.boot-dex2oat-threads=8 \
     dalvik.vm.dex2oat-threads=8
+
+# WFD
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.debug.wfd.enable=1 \
+    persist.hwc.enable_vds=1 \
+    persist.sys.wfd.virtual=0
