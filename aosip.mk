@@ -25,10 +25,12 @@ $(call inherit-product, device/xiaomi/whyred/device.mk)
 # Inherit from custom vendor
 $(call inherit-product, vendor/MiuiCamera/config.mk)
 
-# Inherit some common Mokee stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common AOSiP stuff.
+$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
 
-PRODUCT_NAME := lineage_whyred
+PRODUCT_NAME := aosip_whyred
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
@@ -45,6 +47,3 @@ BUILD_FINGERPRINT := "xiaomi/whyred/whyred:9/PKQ1.180904.001/9.4.25:user/release
 
 TARGET_VENDOR := Xiaomi
 
-# OTA
-PRODUCT_PROPERTY_OVERRIDES += \
-    lineage.updater.uri=https://raw.githubusercontent.com/xiaomeme-whyred/OTA/master/lineage.json
