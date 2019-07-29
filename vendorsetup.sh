@@ -1,0 +1,3 @@
+add_lunch_combo descendant_whyred-eng
+add_lunch_combo descendant_whyred-user
+add_lunch_combo descendant_whyred-userdebug
