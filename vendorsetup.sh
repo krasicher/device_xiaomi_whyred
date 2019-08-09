@@ -1,0 +1,2 @@
+add_lunch_combo revengeos_whyred-user
+add_lunch_combo revengeos_whyred-userdebug
